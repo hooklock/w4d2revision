@@ -1,7 +1,7 @@
 require('sinatra')
 require('sinatra/contrib/all') if development?
 require('pry-byebug')
-require_relatiive('./models/shoe')
+require_relative('./models/shoe')
 
 get '/shoes/new' do
   erb(:new)
@@ -15,7 +15,7 @@ end
 
 post '/shoes' do
   #binding.pry
-  @shoe = Show.new(params)
+  @shoe = Shoe.new(params)
   @shoe.save()
   erb(:create)
 end
