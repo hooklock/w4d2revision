@@ -1,0 +1,51 @@
+/*Sets the font family, text alignment, background colour and defail text colour*/
+body {
+  font-family: 'Lucida Sans Unicode', Lucida Grande, sans-serif;
+  text-align: center;
+  background-color: #e1ebf5;
+  color: #999;
+}
+
+/*Sets the font colour of the font in the h1 tag*/
+h1{
+  color: #000
+}
+
+/*Set the properties if the navigation links
+aligning the text, the space around the text and the colour bar*/
+nav{
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+  background: #d4ecdc;
+}
+
+/*Removes the bullet points created by the ul tag*/
+nav ul{
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+/*Aligns the links side by side*/
+nav li{
+  display: inline-block;
+}
+
+/*Boldens the nav font*/
+nav a{
+  font-weight: 800;
+  padding: 15px 10px;
+}
+
+/*sets a colour change when teh mouse is hovered over a link*/
+nav a:hover{
+  color: #fcdfd7;
+}
+p{
+  display: inline-block;
+}
+
+img{
+  margin-top: 10px;
+}
