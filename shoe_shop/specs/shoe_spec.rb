@@ -8,6 +8,7 @@ class TestShoe <MiniTest::Test
       "first_name" => "Adam",
       "last_name" => "Pinner",
       "address" => "Glasgow",
+      "style" => "De Niro",
       "size" => "10",
       "quantity" => 2
     }
@@ -28,6 +29,10 @@ class TestShoe <MiniTest::Test
 
   def test_address
     assert_equal("Glasgow", @shoe.address)
+  end
+
+  def test_style
+    assert_equal("De Niro", @shoe.style)
   end
 
   def test_size
